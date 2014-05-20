@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OpenProducer Photos feature.
+ */
+
+include_once 'openproducer_photos.features.inc';
