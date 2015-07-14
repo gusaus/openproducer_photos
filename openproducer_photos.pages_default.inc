@@ -67,47 +67,47 @@ function openproducer_photos_default_page_manager_pages() {
   $display->uuid = '8755ba15-4890-4ecb-8b4f-481db17748fe';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-bf6c16b9-263f-41f7-bd1a-3b0858be2ac5';
-    $pane->panel = 'contentmain';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'photosets-panel_pane_3';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'items_per_page' => '25',
-      'fields_override' => array(
-        'field_photos' => 1,
-        'title' => 1,
-      ),
-      'exposed' => array(
-        'sort_order' => 'ASC',
-        'sort_by' => 'created',
-      ),
-      'override_title' => '',
-      'override_title_text' => '',
-      'view_mode' => 'teaser',
-      'widget_title' => '',
-      'use_pager' => 0,
-      'pager_id' => '',
-      'offset' => NULL,
-      'link_to_view' => NULL,
-      'more_link' => NULL,
-      'path' => 'photos-page',
-      'view_settings' => 'fields',
-      'header_type' => 'none',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = 'bf6c16b9-263f-41f7-bd1a-3b0858be2ac5';
-    $display->content['new-bf6c16b9-263f-41f7-bd1a-3b0858be2ac5'] = $pane;
-    $display->panels['contentmain'][0] = 'new-bf6c16b9-263f-41f7-bd1a-3b0858be2ac5';
+  $pane = new stdClass();
+  $pane->pid = 'new-bf6c16b9-263f-41f7-bd1a-3b0858be2ac5';
+  $pane->panel = 'contentmain';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'photosets-panel_pane_3';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'items_per_page' => '25',
+    'fields_override' => array(
+      'field_photos' => 1,
+      'title' => 1,
+    ),
+    'exposed' => array(
+      'sort_order' => 'ASC',
+      'sort_by' => 'created',
+    ),
+    'override_title' => '',
+    'override_title_text' => '',
+    'view_mode' => 'teaser',
+    'widget_title' => '',
+    'use_pager' => 0,
+    'pager_id' => '',
+    'offset' => NULL,
+    'link_to_view' => NULL,
+    'more_link' => NULL,
+    'path' => 'photos-page',
+    'view_settings' => 'fields',
+    'header_type' => 'none',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = 'bf6c16b9-263f-41f7-bd1a-3b0858be2ac5';
+  $display->content['new-bf6c16b9-263f-41f7-bd1a-3b0858be2ac5'] = $pane;
+  $display->panels['contentmain'][0] = 'new-bf6c16b9-263f-41f7-bd1a-3b0858be2ac5';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-bf6c16b9-263f-41f7-bd1a-3b0858be2ac5';
   $handler->conf['display'] = $display;
