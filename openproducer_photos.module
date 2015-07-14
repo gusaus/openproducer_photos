@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the OpenProducer Photos feature.
+ * Code for the openproducer Photos feature.
  */
 
 include_once 'openproducer_photos.features.inc';
