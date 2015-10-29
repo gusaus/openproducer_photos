@@ -59,11 +59,27 @@ function openproducer_photos_default_page_manager_pages() {
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
-      'contentmain' => NULL,
+      'contentmain' => array(
+        'region_title' => '',
+        'hide_classes' => array(
+          'hidden-xs' => 0,
+          'hidden-sm' => 0,
+          'hidden-md' => 0,
+          'hidden-lg' => 0,
+        ),
+        'additional_classes' => array(
+          'clearfix' => 'clearfix',
+          'pull-left' => 0,
+          'pull-right' => 0,
+        ),
+      ),
+    ),
+    'contentmain' => array(
+      'style' => 'bootstrap_styles:well',
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = '%node:title';
   $display->uuid = '8755ba15-4890-4ecb-8b4f-481db17748fe';
   $display->content = array();
   $display->panels = array();
@@ -75,7 +91,7 @@ function openproducer_photos_default_page_manager_pages() {
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'items_per_page' => '25',
+    'items_per_page' => '12',
     'fields_override' => array(
       'field_photos' => 1,
       'title' => 1,
@@ -87,7 +103,7 @@ function openproducer_photos_default_page_manager_pages() {
     'override_title' => '',
     'override_title_text' => '',
     'view_mode' => 'teaser',
-    'widget_title' => '',
+    'widget_title' => 'Photos',
     'use_pager' => 0,
     'pager_id' => '',
     'offset' => NULL,
@@ -96,6 +112,7 @@ function openproducer_photos_default_page_manager_pages() {
     'path' => 'photos-page',
     'view_settings' => 'fields',
     'header_type' => 'none',
+    'override_title_heading' => 'h2',
   );
   $pane->cache = array();
   $pane->style = array(
@@ -108,7 +125,7 @@ function openproducer_photos_default_page_manager_pages() {
   $pane->uuid = 'bf6c16b9-263f-41f7-bd1a-3b0858be2ac5';
   $display->content['new-bf6c16b9-263f-41f7-bd1a-3b0858be2ac5'] = $pane;
   $display->panels['contentmain'][0] = 'new-bf6c16b9-263f-41f7-bd1a-3b0858be2ac5';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-bf6c16b9-263f-41f7-bd1a-3b0858be2ac5';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
